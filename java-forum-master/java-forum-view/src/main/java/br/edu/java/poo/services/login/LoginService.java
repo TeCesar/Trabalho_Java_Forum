@@ -12,8 +12,8 @@ public class LoginService {
     }
 
     public boolean login(UsuarioDTO usuarioDTO) {
-        boolean loginValido = usuarioController.buscarUsuario(usuarioDTO);
-        if (loginValido) {
+        usuarioDTO = usuarioController.buscarUsuario(usuarioDTO);
+        if (usuarioDTO != null) {
             return true;
         }
         return false;

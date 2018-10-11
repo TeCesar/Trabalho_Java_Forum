@@ -8,7 +8,7 @@ public class UsuarioBusinessImpl implements UsuarioBusiness {
 
     UsuarioDAO usuarioDAO = new UsuarioDAOImpl();
 
-    public boolean buscarUsuario(UsuarioDTO usuarioDTO) {
+    public UsuarioDTO buscarUsuario(UsuarioDTO usuarioDTO) {
         return usuarioDAO.buscarUsuario(usuarioDTO);
     }
 }

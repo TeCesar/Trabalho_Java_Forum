@@ -8,7 +8,7 @@ public class UsuarioControllerImpl implements UsuarioController {
 
     UsuarioBusiness usuarioBusiness = new UsuarioBusinessImpl();
 
-    public boolean buscarUsuario(UsuarioDTO usuarioDTO) {
+    public UsuarioDTO buscarUsuario(UsuarioDTO usuarioDTO) {
         return usuarioBusiness.buscarUsuario(usuarioDTO);
     }
 }
