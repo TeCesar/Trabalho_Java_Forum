@@ -10,11 +10,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 @WebServlet(urlPatterns = "/login")
 public class LoginServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
+
     private LoginService loginService = new LoginService();
 
     @Override
@@ -31,12 +33,11 @@ public class LoginServlet extends HttpServlet {
 
         if (logado) {
             req.getSession().setAttribute("usuario.logado", usuarioDTO);
-            RequestDispatcher requestDispatcher = req.getRequestDispatcher("/WEB-INF/menu.jsp");
+            RequestDispatcher requestDispatcher = req.getRequestDispatcher("/WEB-INF/forum.jsp");
             requestDispatcher.forward(req, resp);
         } else {
             RequestDispatcher requestDispatcher = req.getRequestDispatcher("/WEB-INF/index.jsp");
             requestDispatcher.forward(req, resp);
         }
     }
-
 }
