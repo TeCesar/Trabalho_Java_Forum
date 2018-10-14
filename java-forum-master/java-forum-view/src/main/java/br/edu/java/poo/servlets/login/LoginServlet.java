@@ -17,6 +17,7 @@ public class LoginServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
 
+
     private LoginService loginService = new LoginService();
 
     @Override
@@ -33,7 +34,7 @@ public class LoginServlet extends HttpServlet {
 
         if (logado) {
             req.getSession().setAttribute("usuario.logado", usuarioDTO);
-            RequestDispatcher requestDispatcher = req.getRequestDispatcher("/WEB-INF/forum.jsp");
+            RequestDispatcher requestDispatcher = req.getRequestDispatcher("/forum.jsp");
             requestDispatcher.forward(req, resp);
         } else {
             RequestDispatcher requestDispatcher = req.getRequestDispatcher("/WEB-INF/index.jsp");

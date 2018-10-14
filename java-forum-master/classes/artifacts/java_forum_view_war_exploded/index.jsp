@@ -10,38 +10,9 @@
 <head>
     <title>forum</title>
 
-    <style>
-        #barra{
-            height: 50px;
-            width: 100%;
-            position: fixed;
-            left: 0;
-            top: 0;
-            background: #069;
-            color: #fff;
-            text-align: center;
-
-        }
-        .busca{
-
-            right: 105px;
-            width: 500px;
-            position: absolute;
-            top: 58px;
-        }
-        #login{
-            right: 105px;
-            position: absolute;
-            cursor: pointer;
-
-        }
-        a {
-            color: inherit;
-            text-decoration:none;
-        }
+    <style><%@include file="/WEB-INF/estilo/estilo.css"%></style>
 
 
-    </style>
 </head>
 <body>
 
@@ -57,20 +28,14 @@
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
-
+     <input type="button" name="novo" value="Novo Tópico" class="novo">
      <input type="text" name="buscar" placeholder="BUSCAR" class="busca">
 
     <table width="90%" align="center" cellpadding="10">
         <tr align="center" bgcolor="#CCC">
-
-            <td><strong>Nª Ticket</strong></td>
             <td><strong>Titulo Assunto</strong></td>
-            <td><strong>E-mail</strong></td>
             <td><strong>Mensagem</strong></td>
-            <td><strong>Imagem</strong></td>
             <td><strong>Status</strong></td>
-
-
         </tr>
     </table>
 
