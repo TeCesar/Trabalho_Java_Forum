@@ -118,12 +118,12 @@
     <div id="divLogin">
         <div id="login-box-interno">
             <form action="login" method="post">
-                <div id="login-box-label">login></div>
+                <div id="login-box-label">Bem vindo a D.R.T</div>
                 <div class="input-div" id="input-usuario">
-                    <input type="text" value="Usuário" name="nomeUsuario">
+                    <input type="text" placeholder="USUÁRIO" name="nomeUsuario">
                 </div>
                 <div class="input-div" id="input-senha">
-                    <input type="text" value="Senha" name="senha">
+                    <input type="password"  name="senha" placeholder="SENHA">
                 </div>
                 <div id="botoes">
                         <input type="submit" value="Logar" class="botao">
@@ -131,20 +131,6 @@
                 </div>
             </form>
         </div>
-
     </div>
-<!--<div id="divLogin">
-        <div id="login-box-interno">
-            <form action="login" method="post">
-                <label clas>Usuário: </label><input type="text" name="nomeUsuario">
-                <br><br>
-                <label>Senha: </label><input type="password" name="senha">
-                <br><br>
-                <input type="submit" value="Logar">
-
-            </form>
-        </div>
-    </div>
--->
 </body>
 </html>
