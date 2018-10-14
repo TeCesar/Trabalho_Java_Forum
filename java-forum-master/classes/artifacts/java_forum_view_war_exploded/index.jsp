@@ -133,5 +133,18 @@
         </div>
 
     </div>
+<!--<div id="divLogin">
+        <div id="login-box-interno">
+            <form action="login" method="post">
+                <label clas>Usuário: </label><input type="text" name="nomeUsuario">
+                <br><br>
+                <label>Senha: </label><input type="password" name="senha">
+                <br><br>
+                <input type="submit" value="Logar">
+
+            </form>
+        </div>
+    </div>
+-->
 </body>
 </html>
