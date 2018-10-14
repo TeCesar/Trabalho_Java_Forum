@@ -20,19 +20,19 @@ public class UsuarioDAOImpl implements UsuarioDAO {
             ResultSet resultSet = preparedStatement.executeQuery();
 
             while (resultSet.next()) {
-                usuarioDTO.setId(resultSet.getInt("usuario_id"));
-                usuarioDTO.setNomeConta(resultSet.getString("usuario_nomeConta"));
-                usuarioDTO.setSenha(resultSet.getString("usuario_senha"));
-                usuarioDTO.setTipoAcesso(resultSet.getString("usuario_tipoAcesso"));
+                usuarioBusca.setId(resultSet.getInt("usuario_id"));
+                usuarioBusca.setNomeConta(resultSet.getString("usuario_nomeConta"));
+                usuarioBusca.setSenha(resultSet.getString("usuario_senha"));
+                usuarioBusca.setTipoAcesso(resultSet.getString("usuario_tipoAcesso"));
             }
-            return usuarioDTO;
+            return usuarioBusca;
 
         } catch (SQLException e) {
             System.out.println("Falha na conexao");
         }
 
-        usuarioDTO = null;
-        return usuarioDTO;
+        usuarioBusca = null;
+        return usuarioBusca;
     }
 
 }
